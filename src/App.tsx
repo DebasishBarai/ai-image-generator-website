@@ -19,7 +19,7 @@ function App() {
     try {
       console.log('Starting direct Cloudflare API request...');
       const response = await fetch(
-        `/cloudflare-api/client/v4/accounts/${import.meta.env.VITE_CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/black-forest-labs/flux-1-schnell`,
+        `https://api.cloudflare.com/client/v4/accounts/${import.meta.env.VITE_CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/black-forest-labs/flux-1-schnell`,
         {
           method: 'POST',
           headers: {
